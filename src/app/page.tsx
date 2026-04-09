@@ -405,7 +405,7 @@ export default function HomePage() {
                   </Link>
                   {infra.title === 'Portal de Transparência Soberana' && (
                     <Link
-                      href="/civitas-inst"
+                      href="https://civitas-institucional.vercel.app"
                       className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest hover:bg-emerald-500/20 transition-all"
                     >
                       Visão
