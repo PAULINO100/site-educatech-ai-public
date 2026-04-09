@@ -383,7 +383,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {INFRA_ARCHITECTURE.map((infra) => (
               <div key={infra.title} className="glass-bright rounded-3xl p-8 border border-white/5 hover:border-indigo-500/30 hover:glow-sm transition-all duration-500 group">
                 <div className="text-5xl mb-6 filter drop-shadow-[0_0_15px_rgba(99,102,241,0.5)]">{infra.icon}</div>
@@ -396,12 +396,22 @@ export default function HomePage() {
                   <p className="text-[10px] font-bold text-indigo-300 uppercase tracking-widest mb-1">Objetivo Estratégico</p>
                   <p className="text-xs text-slate-300 font-medium tracking-tight">🎯 {infra.goal}</p>
                 </div>
-                <Link
-                  href={infra.link}
-                  className="inline-flex items-center gap-2 text-xs font-bold text-white uppercase tracking-widest group-hover:text-indigo-400 transition-colors"
-                >
-                  Saiba Mais <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
-                </Link>
+                <div className="flex items-center gap-4">
+                  <Link
+                    href={infra.link}
+                    className="inline-flex items-center gap-2 text-xs font-bold text-white uppercase tracking-widest group-hover:text-indigo-400 transition-colors"
+                  >
+                    Saiba Mais <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
+                  </Link>
+                  {infra.title === 'Portal de Transparência Soberana' && (
+                    <Link
+                      href="/civitas-inst"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest hover:bg-emerald-500/20 transition-all"
+                    >
+                      Visão
+                    </Link>
+                  )}
+                </div>
               </div>
             ))}
           </div>
