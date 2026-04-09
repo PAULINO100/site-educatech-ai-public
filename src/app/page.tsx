@@ -83,6 +83,14 @@ const INFRA_ARCHITECTURE = [
     desc: 'Plataforma para universidades, empresas e governos. Dados anonimizados e estatisticamente verificáveis em questionários imutáveis.',
     goal: 'Gerar dados confiáveis para decisões estratégicas.',
     link: '/civitas-inst'
+  },
+  {
+    icon: '⚖️',
+    title: 'Portal de Transparência Soberana',
+    subtitle: 'Auditoria Internacional: Venezuela 2026',
+    desc: 'Acesso em tempo real aos dados auditáveis da simulação eleitoral. Verificação de integridade via ZK-Proofs e Cross-Check institucional.',
+    goal: 'Validar a legitimidade de processos democráticos sob estresse.',
+    link: '/civitas-inst'
   }
 ]
 
