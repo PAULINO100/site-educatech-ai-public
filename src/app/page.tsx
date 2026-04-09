@@ -59,6 +59,33 @@ const PROOF_STATS = [
   { value: '80%', label: 'Redução no consumo de tokens vs. IAs sem governança' },
 ]
 
+const INFRA_ARCHITECTURE = [
+  {
+    icon: '🔐',
+    title: 'ZK-ID',
+    subtitle: 'Identidade Digital Soberana',
+    desc: 'Camada fundamental de identidade verificável sem exposição de dados pessoais. Provas criptográficas (Zero-Knowledge) com controle total do usuário.',
+    goal: 'Garantir quem pode participar de qualquer processo.',
+    link: '/zk-id'
+  },
+  {
+    icon: '🗳️',
+    title: 'CivitasVote Governamental',
+    subtitle: 'Infraestrutura de Votação Auditável',
+    desc: 'Votação digital com integridade verificável, boletins auditáveis e encadeamento por hash. Transparência sem violar privacidade.',
+    goal: 'Garantir decisões legítimas e auditáveis.',
+    link: '/civitas-gov'
+  },
+  {
+    icon: '📊',
+    title: 'CivitasVote Institucional',
+    subtitle: 'Governança e Inteligência Social',
+    desc: 'Plataforma para universidades, empresas e governos. Dados anonimizados e estatisticamente verificáveis em questionários imutáveis.',
+    goal: 'Gerar dados confiáveis para decisões estratégicas.',
+    link: '/civitas-inst'
+  }
+]
+
 const COMPARISON = [
   { feature: 'Patches determinísticos (sem alucinação)', certus: true, generic: false },
   { feature: 'Controle financeiro por tarefa (Circuit Breaker)', certus: true, generic: false },
@@ -67,6 +94,8 @@ const COMPARISON = [
   { feature: 'Foco multiprojeto com Cognitive Indexer', certus: true, generic: false },
   { feature: 'Compatível com OpenAI, Gemini, Anthropic', certus: true, generic: 'parcial' },
   { feature: 'Validação de identidade ZK-ID', certus: true, generic: false },
+  { feature: 'Boletim de Urna Digital Auditável', certus: true, generic: false },
+  { feature: 'Governança Social Anonimizada', certus: true, generic: false },
 ]
 
 const FAQ = [
@@ -326,6 +355,45 @@ export default function HomePage() {
                     <span key={tag} className="text-xs px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">{tag}</span>
                   ))}
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ ARQUITETURA DA INFRAESTRUTURA ═════════════════════════════════ */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-indigo-600/5 blur-[120px] pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+          <div className="text-center mb-16">
+            <p className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-3">Tecnologia de Missão Crítica</p>
+            <h2 className="text-4xl font-black text-white mb-4">
+              Arquitetura da <span className="gradient-text">Infraestrutura</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              Soberania técnica em camadas modulares para governos e instituições. PII-Zero por design.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {INFRA_ARCHITECTURE.map((infra) => (
+              <div key={infra.title} className="glass-bright rounded-3xl p-8 border border-white/5 hover:border-indigo-500/30 hover:glow-sm transition-all duration-500 group">
+                <div className="text-5xl mb-6 filter drop-shadow-[0_0_15px_rgba(99,102,241,0.5)]">{infra.icon}</div>
+                <h3 className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">{infra.subtitle}</h3>
+                <h4 className="text-2xl font-black text-white mb-4 group-hover:text-indigo-200 transition-colors">{infra.title}</h4>
+                <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                  {infra.desc}
+                </p>
+                <div className="p-4 rounded-xl bg-indigo-500/5 border border-indigo-500/10 mb-8">
+                  <p className="text-[10px] font-bold text-indigo-300 uppercase tracking-widest mb-1">Objetivo Estratégico</p>
+                  <p className="text-xs text-slate-300 font-medium tracking-tight">🎯 {infra.goal}</p>
+                </div>
+                <Link
+                  href={infra.link}
+                  className="inline-flex items-center gap-2 text-xs font-bold text-white uppercase tracking-widest group-hover:text-indigo-400 transition-colors"
+                >
+                  Saiba Mais <span className="text-lg group-hover:translate-x-1 transition-transform">→</span>
+                </Link>
               </div>
             ))}
           </div>
