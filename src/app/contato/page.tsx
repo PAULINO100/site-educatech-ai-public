@@ -18,7 +18,7 @@ export default function ContatoPage() {
         <div className="glass-bright rounded-3xl p-12 text-center max-w-md">
           <div className="text-5xl mb-4">✅</div>
           <h2 className="text-2xl font-black text-white mb-3">Mensagem Enviada!</h2>
-          <p className="text-slate-400">Respondemos em até 48h. Para urgências: founder@certusengine.ai</p>
+          <p className="text-slate-400">Respondemos em até 48h. Para urgências: institucional@educatech.ai</p>
         </div>
       </div>
     )
@@ -106,9 +106,9 @@ export default function ContatoPage() {
           {/* Channels */}
           <div className="space-y-4">
             {[
-              { icon: '👤', label: 'Fundador', email: 'founder@certusengine.ai', desc: 'Demos, parcerias e early access' },
-              { icon: '🔐', label: 'Segurança', email: 'security@certusengine.ai', desc: 'Vulnerabilidades, pentests, CISO' },
-              { icon: '⚖️', label: 'DPO / LGPD', email: 'dpo@certusengine.ai', desc: 'Requisições LGPD, órgãos regulatórios' },
+              { icon: '👤', label: 'Fundador', email: 'contato@educatech.ai', desc: 'Demos, parcerias e early access' },
+              { icon: '🔐', label: 'Segurança', email: 'seguranca@educatech.ai', desc: 'Vulnerabilidades, pentests, CISO' },
+              { icon: '⚖️', label: 'DPO / LGPD', email: 'privacidade@educatech.ai', desc: 'Requisições LGPD, órgãos regulatórios' },
             ].map(ch => (
               <div key={ch.email} className="glass rounded-xl p-5 flex items-center gap-4">
                 <span className="text-2xl">{ch.icon}</span>

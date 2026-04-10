@@ -305,7 +305,7 @@ export default function HomePage() {
               <span className="text-red-400">sozinho.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Antes do Certus Engine, até as IAs mais poderosas falhavam em escala. Aqui estão as dores que solucionamos:
+              Antes da nossa infraestrutura soberana, até as IAs mais poderosas falhavam em escala operacional. Aqui estão as dores que solucionamos:
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -326,11 +326,11 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <p className="text-xs font-semibold text-indigo-400 uppercase tracking-widest mb-3">A Solução</p>
             <h2 className="text-4xl font-black text-white mb-4">
-              O Certus trabalha para{' '}
+              A Educatech trabalha para{' '}
               <span className="gradient-text">quem você é.</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Seja você um desenvolvedor, um empresário ou uma instituição — o Certus tem uma resposta precisa para a sua dor específica.
+              Seja você um desenvolvedor, um empresário ou uma instituição — temos uma resposta precisa para a sua dor específica.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

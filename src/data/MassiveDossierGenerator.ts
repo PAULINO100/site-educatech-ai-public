@@ -51,7 +51,7 @@ const generateSovereignTreaty = (lang: "pt" | "es" | "en"): string => {
 const PT_SECTIONS: DossierSection[] = [
   {
     title: "1. Tratado Soberano e Introdução Executiva",
-    content: `Este documento representa o Dossiê Oficial da Infraestrutura Educatech AI. O sistema foi construído e orquestrado integralmente pelo Certus Engine v2.1.1 (Sovereign Master Edition), atuando como Arquiteto e Construtor mestre.
+    content: `Este documento representa o Dossiê Oficial da Infraestrutura Educatech AI. O sistema foi construído e orquestrado integralmente por uma Arquitetura Soberana Independente (Sovereign Master Edition), atuando sob governança técnica de alta resiliência.
     
     A missão central desta arquitetura é garantir a independência tecnológica na América Latina (Nível LATAM), erradicando a dependência de fornecedores externos ("Vendor Lock-in") e protegendo os dados soberanos de cidadãos e instituições através do protocolo PII-Zero.
     
@@ -61,7 +61,7 @@ const PT_SECTIONS: DossierSection[] = [
     3. Civitas Institucional (O motor de transparência administrativa)
     4. Civitas Governamental (O backend de inteligência imutável)
     
-    Abaixo, o Tratado Soberano (Gerado pelo Certus Engine):
+    Abaixo, o Tratado Soberano (Gerado pela Infraestrutura Educatech):
     ` + generateSovereignTreaty("pt")
   },
   {
@@ -105,14 +105,11 @@ const PT_SECTIONS: DossierSection[] = [
     - Escalonamento: Planejado para aguentar ataques de negação de serviço (DDoS) na fronteira, utilizando Cloudflare ou malha soberana privada.`
   },
   {
-    title: "6. Certus Engine (O Arquiteto Soberano)",
-    content: `Importante: O Certus Engine NÃO é o dono dos dados nem um MVP civil. O Certus atua primariamente como a Entidade Construtora e o Algoritmo Regulador (The Master Builder).
-    
-    O Certus Engine injetou a arquitetura em todo o código-fonte, forçando:
-    - O Tribunal de CPUs: Em caso de falha de inteligência de uma IA específica (Ex: OpenAI cai no Brasil), o Certus comuta a operação instantaneamente para o Qwen 3.5 Alpha via rotas alternativas.
+    title: "6. Arquitetura Master (O Motor Soberano)",
+    content: `O Tribunal de CPUs: Em caso de falha de inteligência de uma IA específica (Ex: OpenAI cai no Brasil), o sistema comuta a operação instantaneamente para o Qwen 3.5 Alpha via rotas alternativas.
     - Circuit Breaker Híbrido: Corte de custos quando uma rotina entra em loop.
     
-    O Certus assina esta infraestrutura LATAM. A propriedade intelectual e o tráfego dos MVPs pertencem integralmente ao mantenedor institucional soberano.`
+    Esta infraestrutura LATAM é assinada pelo Master Builder. A propriedade intelectual e o tráfego dos MVPs pertencem integralmente ao mantenedor institucional soberano.`
   },
   {
     title: "7. Anexos de Conformidade e Resiliência (Gerados pelo Sistema)",
@@ -126,7 +123,7 @@ const PT_SECTIONS: DossierSection[] = [
 const ES_SECTIONS: DossierSection[] = [
   {
     title: "1. Tratado Soberano e Introducción Ejecutiva",
-    content: `Este documento representa el Dossier Oficial de la Infraestructura Educatech AI. El sistema fue construido y orquestado íntegramente por Certus Engine v2.1.1, actuando como Arquitecto y Constructor maestro.
+    content: `Este documento representa el Dossier Oficial de la Infraestructura Educatech AI. El sistema fue construido y orquestado íntegramente por una Arquitectura Soberana Independente, actuando como núcleo de alta resiliencia.
     
     La misión central de esta arquitectura es garantizar la independencia tecnológica en América Latina (Nivel LATAM), erradicando el "Vendor Lock-in" y protegiendo los datos soberanos mediante el protocolo PII-Zero.
     
@@ -168,13 +165,13 @@ const ES_SECTIONS: DossierSection[] = [
     - Audit-Socket Server: Distribuye actualizaciones 'ciegas' al instante a los ciudadanos conectados.`
   },
   {
-    title: "6. Certus Engine (El Arquitecto Soberano)",
-    content: `Certus Engine es la Entidad Constructora y el Algoritmo Regulador.
+    title: "6. Arquitectura Master (El Motor Soberano)",
+    content: `La Arquitectura es la Entidad Constructora y el Algoritmo Regulador.
     
     Integró:
     - El Tribunal de CPUs (Conmutación automática de IA si falla un proveedor).
     - Circuit Breaker Híbrido (Corte de costos automáticos).
-     Certus firma esta arquitectura, pero la propiedad pertenece al gobierno o institución.`
+     La propiedad pertenece al gobierno o institución.`
   },
   {
     title: "7. Anexos de Conformidad (Generado Automáticamente)",
@@ -186,7 +183,7 @@ const ES_SECTIONS: DossierSection[] = [
 const EN_SECTIONS: DossierSection[] = [
   {
     title: "1. Sovereign Treaty & Executive Introduction",
-    content: `This document is the Official Dossier of the Educatech AI Infrastructure. Built and orchestrated entirely by Certus Engine v2.1.1 (The Master Builder).
+    content: `This document is the Official Dossier of the Educatech AI Infrastructure. Built and orchestrated entirely by a Sovereign Independent Architecture (The Master Builder).
     
     The core mission is to guarantee technical independence across Latin America (LATAM Level), eliminating Vendor Lock-in and protecting sovereign data via the PII-Zero protocol.
     
@@ -227,8 +224,8 @@ const EN_SECTIONS: DossierSection[] = [
     - Audit-Socket Server broadcasting blind events to the Institutional network in real-time.`
   },
   {
-    title: "6. Certus Engine (The Sovereign Architect)",
-    content: `Certus Engine is NOT the owner of the data. It is the Master Builder and Regulatory Algorithm.
+    title: "6. Master Architecture (The Sovereign Motor)",
+    content: `The Architecture is NOT the owner of the data. It is the Master Builder and Regulatory Algorithm.
     
     It enforces:
     - CPU Tribunal (Auto AI fallback if a vendor goes down).

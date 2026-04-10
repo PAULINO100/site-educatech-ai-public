@@ -81,7 +81,7 @@ export default function WhitepaperPage() {
         doc.setPage(i);
         doc.setFontSize(8);
         doc.setTextColor(150);
-        doc.text(`Página ${i} de ${totalPages} - Certus Engine / Educatech AI`, pageWidth / 2, pageHeight - 10, { align: "center" });
+        doc.text(`Página ${i} de ${totalPages} - Educatech AI Soberana (Builder: Certus Engine)`, pageWidth / 2, pageHeight - 10, { align: "center" });
       }
 
       doc.save(`Dossie-Oficial-EducatechAI-${lang}.pdf`);
@@ -129,7 +129,7 @@ export default function WhitepaperPage() {
       <header className="sticky top-0 z-50 glass border-b border-slate-800/60 px-6 py-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-4">
-            <Link href="/" className="text-2xl font-black text-white tracking-tighter">CERTUS<span className="text-indigo-500">ENGINE</span></Link>
+            <Link href="/" className="text-2xl font-black text-white tracking-tighter">EDUCATECH<span className="text-emerald-500">AI</span></Link>
             <span className="h-6 w-px bg-slate-800 hidden sm:block" />
             <span className="text-[10px] font-mono text-indigo-400 uppercase tracking-widest animate-pulse">Institutional Access Active</span>
           </div>
@@ -186,7 +186,12 @@ export default function WhitepaperPage() {
             </div>
             
             {/* Visual Specs for each section */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex items-center gap-2 mt-12">
+              <span className="text-[10px] text-slate-600 font-mono border border-slate-700/50 rounded px-2 py-0.5">SOVEREIGN-EDITION v2.2.1</span>
+              <span className="text-[10px] text-slate-600 font-bold uppercase tracking-widest ml-4">PII-Zero Compliance</span>
+              <span className="text-[10px] text-emerald-600/60 font-black uppercase tracking-[0.2em] ml-6 border-l border-emerald-900/40 pl-6">Builder: Certus Engine</span>
+            </div>
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="glass-bright p-6 rounded-2xl border border-slate-800">
                 <p className="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-4">Arquitetura Técnica</p>
                 <div className="space-y-3">
@@ -211,12 +216,13 @@ export default function WhitepaperPage() {
         {/* Verification Footer */}
         <section className="pt-24 mt-24 border-t border-slate-800 text-center">
           <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-emerald-500 mx-auto mb-12" />
-          <p className="text-[10px] text-slate-500 uppercase tracking-[0.5em] mb-4">Certus Engine Sovereign Treaty</p>
+          <p className="text-[10px] text-slate-500 uppercase tracking-[0.5em] mb-4">Educatech AI Sovereign Treaty (Builder: Certus Engine)</p>
           <p className="text-sm text-slate-400 mb-8 max-w-lg mx-auto italic">"Este documento prova a soberania técnica do ecossistema Educatech AI. A conformidade Tier A+ garante a perpetuidade das instituições no ambiente digital."</p>
           <div className="flex justify-center gap-12 grayscale opacity-40">
-             <div className="text-2xl font-black">CERTUS</div>
+             <div className="text-2xl font-black">EDUCATECH AI</div>
              <div className="text-2xl font-black">CIVITAS</div>
              <div className="text-2xl font-black">ZK-ID</div>
+             <div className="text-[10px] font-bold text-slate-700 mt-2 uppercase tracking-widest">Master Builder: Certus Engine</div>
           </div>
         </section>
       </main>

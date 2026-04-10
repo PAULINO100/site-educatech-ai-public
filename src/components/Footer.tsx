@@ -75,8 +75,9 @@ export function Footer() {
         <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-slate-600 font-medium">© 2026 Educatech AI · Infraestrutura Soberana Regional</p>
           <div className="flex items-center gap-2">
-            <span className="text-[10px] text-slate-600 font-mono border border-slate-700/50 rounded px-2 py-0.5">SOVEREIGN-EDITION v2.2.0</span>
+            <span className="text-[10px] text-slate-600 font-mono border border-slate-700/50 rounded px-2 py-0.5">SOVEREIGN-EDITION v2.2.1</span>
             <span className="text-[10px] text-slate-600 font-bold uppercase tracking-widest ml-4">PII-Zero Compliance</span>
+            <span className="text-[10px] text-emerald-600/60 font-black uppercase tracking-[0.2em] ml-6 border-l border-emerald-900/40 pl-6">Builder: Certus Engine</span>
           </div>
         </div>
       </div>
