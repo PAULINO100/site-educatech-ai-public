@@ -5,12 +5,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const NAV_LINKS = [
-  { href: '/produto', label: 'Produto' },
-  { href: '/capacidades', label: 'Capacidades' },
-  { href: '/vantagens', label: 'Vantagens' },
-  { href: '/zk-midnight', label: 'ZK-Midnight' },
+  { href: '/zk-id', label: 'ZK-ID' },
+  { href: '/civitas-inst', label: 'Civitas Institucional' },
+  { href: '/civitas-gov', label: 'Civitas Governamental' },
   { href: '/documentacao', label: 'Documentação' },
-  { href: '/como-usar', label: 'Como Usar' },
   { href: '/acesso-institucional', label: 'Acesso Institucional' },
   { href: '/faq', label: 'FAQ' },
 ]
@@ -30,18 +28,18 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'glass border-b border-slate-700/50 py-3'
+          ? 'ultra-glass border-b border-emerald-500/10 py-3'
           : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:shadow-indigo-500/40 transition-shadow">
-            C
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:shadow-emerald-500/40 transition-shadow">
+            E
           </div>
           <span className="font-bold text-lg tracking-tight">
-            Certus<span className="text-indigo-400">Engine</span>
+            Educatech<span className="text-emerald-400">AI</span>
           </span>
         </Link>
 
@@ -53,7 +51,7 @@ export function Header() {
               href={link.href}
               className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
                 pathname === link.href
-                  ? 'text-indigo-400 bg-indigo-500/10'
+                  ? 'text-emerald-400 bg-emerald-500/10'
                   : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/60'
               }`}
             >
@@ -72,7 +70,7 @@ export function Header() {
           </Link>
           <Link
             href="/acesso-institucional"
-            className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white text-sm font-semibold transition-all duration-150 shadow-lg hover:shadow-indigo-500/30"
+            className="px-4 py-2 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-sm font-semibold transition-all duration-150 shadow-lg hover:shadow-emerald-500/30"
           >
             Obter Acesso
           </Link>
@@ -94,7 +92,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden glass border-t border-slate-700/50 mt-1 px-4 py-4 flex flex-col gap-1">
+        <div className="md:hidden ultra-glass border-t border-emerald-500/10 mt-1 px-4 py-4 flex flex-col gap-1">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -105,11 +103,11 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <div className="pt-2 border-t border-slate-700/50 mt-2">
+          <div className="pt-2 border-t border-emerald-500/10 mt-2">
             <Link
               href="/acesso-institucional"
               onClick={() => setMenuOpen(false)}
-              className="block w-full text-center px-4 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-sm font-semibold"
+              className="block w-full text-center px-4 py-3 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-sm font-semibold"
             >
               Obter Acesso
             </Link>

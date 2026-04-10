@@ -3,25 +3,25 @@
 import Link from 'next/link'
 
 const FEATURES_INSTITUTIONAL = [
-  'Governança Tier A+ Determinística v2.1.1',
-  'Resiliência "Nunca Cego" (Automatic CPU Fallback)',
-  'PII-Zero scan bidirecional soberano',
-  'Regra de Ouro v2.1.1 (Qwen 3.5 mandated start)',
-  'Universal LLM Adapter (OpenAI, Anthropic, Gemini, local)',
-  'Circuit Breakers Financeiros com billing real-time',
-  'Auditoria SHA256 imutável e auditável',
-  'ZK-Midnight license proof para soberania técnica',
+  'Infraestrutura Soberana LATAM v2.2.0',
+  'Resiliência "Nunca Cego" (Nodos Regionais)',
+  'Protocolo PII-Zero de Privacidade Total',
+  'Identidade Descentralizada ZK-ID Integrada',
+  'Interoperabilidade com Sistemas Públicos',
+  'Logs de Auditoria SHA256 Imutáveis',
+  'Acesso ao Dossiê Técnico v2.2.0',
+  'Monitoramento de Integridade em Tempo Real',
 ]
 
 const FEATURES_ENTERPRISE = [
-  'Deploy On-Premise ou Hybrid Cloud',
-  'Hardware-bound Node-lock licensing',
-  'SLA de missão crítica 99.9% uptime',
-  'Onboarding técnico assistido e treinamento de equipe',
-  'Suporte prioritário Certus Prime 24/7',
-  'Custom adapters e integração com legado governamental',
-  'Auditoria regulatória assistida (LGPD/Standards Técnicos)',
-  'Consenso Triplo entre frotas de CPUs Alpha',
+  'Implantação On-Premise (Nacional/Privada)',
+  'Isolamento Físico de Dados Sensíveis',
+  'Uptime de Missão Crítica 99.999%',
+  'Treinamento Técnico para Equipes de TI',
+  'Suporte Institucional Especializado 24/7',
+  'Customização de Protocolos Governamentais',
+  'Auditoria Regulatória Assistida (LGPD)',
+  'Consenso Técnico Regional entre Nodos',
 ]
 
 export default function InstitutionalAccessPage() {
@@ -30,41 +30,41 @@ export default function InstitutionalAccessPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 mb-6 border border-indigo-500/30">
-            <span className="text-indigo-400 text-sm">🛡️</span>
-            <span className="text-xs text-indigo-300 font-semibold">Infraestrutura Soberana de Missão Crítica</span>
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 mb-6 border border-emerald-500/30">
+            <span className="text-emerald-400 text-sm">🛡️</span>
+            <span className="text-xs text-emerald-300 font-semibold uppercase tracking-widest">Infraestrutura Soberana Regional</span>
           </div>
-          <h1 className="text-5xl font-black text-white mb-4">Acesso Institucional</h1>
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-4 italic">Acesso Institucional</h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Governança, Determinismo e Resiliência para organizações que exigem soberania técnica absoluta.
+            Governança, Transparência e Autonomia Regional para organizações que exigem soberania digital absoluta.
           </p>
         </div>
 
         {/* Deployment Options */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto">
           {/* Hybrid Cloud / Standard Institutional */}
-          <div className="glass-bright rounded-3xl p-8 relative overflow-hidden border-2 border-indigo-500/40 glow-indigo">
-            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-500 to-violet-500" />
-            <h2 className="text-2xl font-bold text-white mb-2">Sovereign Cluster</h2>
-            <p className="text-slate-400 text-sm mb-6">Implantação Híbrida em Cloud Certus</p>
+          <div className="glass-bright rounded-[2.5rem] p-10 relative overflow-hidden border-2 border-emerald-500/40 glow-emerald transition-all hover:scale-[1.02] duration-500">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 to-teal-500" />
+            <h2 className="text-3xl font-black text-white mb-2 italic">Cluster Soberano</h2>
+            <p className="text-slate-400 text-sm mb-6 font-medium">Implantação Híbrida em Nodos Regionais</p>
 
             <div className="mt-6 mb-8">
               <span className="text-4xl font-black text-white">Sob Consulta</span>
-              <p className="text-emerald-400 text-sm font-semibold mt-2">
-                🔒 Provisionamento Mandatário Tier A+
+              <p className="text-emerald-400 text-[10px] font-bold uppercase tracking-widest mt-2">
+                🔒 Provisionamento Soberano Homologado
               </p>
             </div>
 
             <Link
-              href="/app"
-              className="block w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold text-center transition-all shadow-lg hover:shadow-indigo-500/30 mb-8"
+              href="/contato"
+              className="block w-full py-5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xl text-center transition-all shadow-lg shadow-emerald-500/20 mb-10 active:scale-95"
             >
-              Solicitar Credenciais →
+              Iniciar Homologação →
             </Link>
 
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {FEATURES_INSTITUTIONAL.map((f) => (
-                <li key={f} className="flex items-start gap-3 text-sm text-slate-300">
+                <li key={f} className="flex items-start gap-4 text-sm text-slate-300 font-medium">
                   <span className="text-emerald-400 mt-0.5 shrink-0">✓</span>
                   {f}
                 </li>
@@ -73,28 +73,28 @@ export default function InstitutionalAccessPage() {
           </div>
 
           {/* On-Premise / Government */}
-          <div className="glass rounded-3xl p-8 relative border border-slate-700 hover:border-violet-500/30 transition-all">
-            <h2 className="text-2xl font-bold text-white mb-2">On-Premise / Private</h2>
-            <p className="text-slate-400 text-sm mb-6">Isolamento total em infraestrutura física do cliente</p>
+          <div className="glass rounded-[2.5rem] p-10 relative border border-white/5 hover:border-emerald-500/20 transition-all group duration-500 hover:scale-[1.02]">
+            <h2 className="text-3xl font-black text-white mb-2 italic">Private Core</h2>
+            <p className="text-slate-400 text-sm mb-6 font-medium">Isolamento total em infraestrutura física nacional</p>
             
             <div className="mt-6 mb-8">
-              <span className="text-4xl font-black text-slate-300">Enterprise</span>
-              <p className="text-violet-400 text-sm font-semibold mt-2">
-                🏛️ Projetos Governamentais & Bancários
+              <span className="text-4xl font-black text-slate-300">Governamental</span>
+              <p className="text-emerald-500/70 text-[10px] font-bold uppercase tracking-widest mt-2">
+                🏛️ Alta Administração & Segurança Nacional
               </p>
             </div>
 
             <Link
               href="/contato"
-              className="block w-full py-4 rounded-xl border border-slate-600 hover:border-indigo-500 text-slate-300 hover:text-white font-semibold text-center transition-all mb-8"
+              className="block w-full py-5 rounded-2xl border border-white/10 glass hover:border-emerald-500/40 text-white font-black text-xl text-center transition-all mb-10 hover:bg-white/5"
             >
               Agendar Protocolo de Deploy →
             </Link>
 
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               {FEATURES_ENTERPRISE.map((f) => (
-                <li key={f} className="flex items-start gap-3 text-sm text-slate-300">
-                  <span className="text-violet-400 mt-0.5 shrink-0">◆</span>
+                <li key={f} className="flex items-start gap-4 text-sm text-slate-400 font-medium">
+                  <span className="text-emerald-500/50 mt-0.5 shrink-0">◆</span>
                   {f}
                 </li>
               ))}
@@ -103,15 +103,15 @@ export default function InstitutionalAccessPage() {
         </div>
 
         {/* Core Advisory */}
-        <div className="glass-bright rounded-2xl p-10 border border-indigo-500/20 max-w-4xl mx-auto flex flex-col items-center text-center">
-          <p className="text-indigo-300 font-bold text-xl mb-4">🛡️ O Manifesto do Determinismo</p>
-          <p className="text-slate-300 text-lg leading-relaxed mb-6">
-            "Não permitimos que o seu sistema fique no escuro. O Certus Engine v2.1.1 garante que, 
-            mesmo sob falha de provedores terceiros, sua governança permaneça inabalável através 
-            do nosso protocolo de resiliência ativa."
+        <div className="glass-bright rounded-[3rem] p-10 md:p-16 border border-emerald-500/10 max-w-4xl mx-auto flex flex-col items-center text-center">
+          <p className="text-emerald-400 font-black text-2xl mb-6 italic tracking-tighter">O Manifesto da Soberania Digital</p>
+          <p className="text-slate-300 text-lg leading-relaxed mb-8 font-medium">
+            "A verdadeira independência de uma nação ou instituição é refletida em seu controle tecnológico. 
+            A Educatech AI Soberana v2.2.0 garante que a infraestrutura técnica regional permaneça resiliente, 
+            privada e inquebrável perante dependências externas."
           </p>
-          <Link href="/documentacao" className="text-indigo-400 hover:text-indigo-300 font-semibold transition-colors">
-            Ler Whitepaper Técnico v2.1.1 →
+          <Link href="/whitepaper" className="text-emerald-400 hover:text-emerald-300 font-black uppercase tracking-widest text-xs transition-colors border-b border-emerald-500/20 pb-1">
+            Revisar Dossiê de Soberania LATAM →
           </Link>
         </div>
       </div>

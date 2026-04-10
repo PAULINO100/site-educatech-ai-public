@@ -7,48 +7,48 @@ import { useState } from 'react'
 
 const PAIN_POINTS = [
   {
-    icon: '🌪️',
-    title: 'IA "se perde" em projetos grandes',
-    desc: 'Ela mistura arquivos de pastas diferentes e perde o raciocínio em projetos complexos. Em milhares de linhas de código, isso gera bugs impossíveis de achar.',
+    icon: '🌎',
+    title: 'Dependência de Nuvens Estrangeiras',
+    desc: 'Dados institucionais e governamentais armazenados em infraestruturas externas sem soberania real sobre os logs e o processamento.',
   },
   {
-    icon: '💸',
-    title: 'Custos de API fora de controle',
-    desc: 'Loops infinitos de tokens, requisições redundantes e nenhuma visibilidade de custo real. A fatura do mês é uma surpresa dolorosa.',
+    icon: '🗳️',
+    title: 'Processos Democráticos Opacos',
+    desc: 'Votações e consultas que não permitem auditoria pública em tempo real, gerando desconfiança e instabilidade institucional.',
   },
   {
-    icon: '🔓',
-    title: 'Dados sensíveis em risco',
-    desc: 'Seus segredos comerciais, CPFs e chaves de API podem estar vazando para os modelos de treinamento de nuvens externas sem você saber.',
+    icon: '🔐',
+    title: 'Identidade e PII em Risco',
+    desc: 'Exposição de dados sensíveis de cidadãos e servidores em plataformas que não seguem o protocolo de anonimização ZK-ID.',
   },
   {
-    icon: '❓',
-    title: 'Zero auditabilidade',
-    desc: 'Quando a IA erra, você não sabe o porquê. Sem rastreio, sem logs, sem explicação. O Certus abre essa "caixa preta" e mostra cada detalhe da execução.',
+    icon: '⚖️',
+    title: 'Falta de Auditoria Imutável',
+    desc: 'A impossibilidade de rastreio técnico independente sobre decisões tomadas por sistemas automatizados ou processos de consulta.',
   },
 ]
 
 const SOLUTIONS = [
   {
-    persona: '👨‍💻',
-    role: 'Para o Desenvolvedor',
-    headline: 'Fim do "debug de prompt"',
-    desc: 'O Certus entrega sugestões que já vêm testadas e prontas. A IA não apenas "chuta" um código — ela entrega correções exatas que funcionam de primeira. Gerencie projetos gigantes sem dor de cabeça.',
-    tags: ['Correções Precisas', 'Organização Automática', 'Foco no Código'],
+    persona: '🔐',
+    role: 'ZK-ID Soberano',
+    headline: 'Identidade Digital sem Medo',
+    desc: 'Nossa camada de identificação garante que o usuário prove quem é sem nunca revelar dados privados. Soberania total do cidadão sobre sua própria identidade digital.',
+    tags: ['Zero-Knowledge', 'Privacidade Total', 'Compatível LATAM'],
   },
   {
-    persona: '💼',
-    role: 'Para o Empresário',
-    headline: 'ROI real e custos previsíveis',
-    desc: 'Defina um teto de gastos por tarefa. O Circuit Breaker Financeiro corta o processo antes do estouro. Logs de execução mostram cada centavo investido e cada ação tomada. A IA vira um ativo, não uma roleta russa.',
-    tags: ['Circuit Breaker Financeiro', 'PII-Zero', 'Auditoria Imutável'],
+    persona: '🗳️',
+    role: 'Civitas Governamental',
+    headline: 'Democracia Auditável em Tempo Real',
+    desc: 'Infraestrutura de votação e consulta para governos. Transparência imutável via blockchain interna e provas criptográficas de integridade.',
+    tags: ['Voto Auditável', 'Hashing Imutável', 'Transparência'],
   },
   {
     persona: '🏛️',
-    role: 'Para Instituições',
-    headline: 'Conformidade e identidade verificável',
-    desc: 'Validação de identidade (ZK-ID) sem exposição de dados privados. Skills especializadas que seguem diretrizes pedagógicas ou regulatórias. Trilha de auditoria que prova conformidade com LGPD, auditorias e regulações.',
-    tags: ['ZK-ID Zero-Knowledge', 'Compliance LGPD', 'Skills Institucionais'],
+    role: 'Civitas Institucional',
+    headline: 'Governança para Instituições',
+    desc: 'Plataforma de inteligência social e consultas internas para universidades e empresas. Dados anonimizados para decisões estratégicas seguras.',
+    tags: ['Inteligência Social', 'Compliance LGPD', 'Dados Seguros'],
   },
 ]
 
@@ -95,53 +95,35 @@ const INFRA_ARCHITECTURE = [
 ]
 
 const COMPARISON = [
-  { feature: 'Patches determinísticos (sem alucinação)', certus: true, generic: false },
-  { feature: 'Controle financeiro por tarefa (Circuit Breaker)', certus: true, generic: false },
-  { feature: 'PII-Zero — dados sensíveis nunca vazam', certus: true, generic: false },
-  { feature: 'Auditoria imutável com SHA256', certus: true, generic: false },
-  { feature: 'Foco multiprojeto com Cognitive Indexer', certus: true, generic: false },
-  { feature: 'Compatível com OpenAI, Gemini, Anthropic', certus: true, generic: 'parcial' },
-  { feature: 'Validação de identidade ZK-ID', certus: true, generic: false },
-  { feature: 'Boletim de Urna Digital Auditável', certus: true, generic: false },
-  { feature: 'Governança Social Anonimizada', certus: true, generic: false },
+  { feature: 'Identidade ZK-ID (Zero-Knowledge)', educatech: true, legacy: false },
+  { feature: 'Votação Digital Auditável com Hash', educatech: true, legacy: false },
+  { feature: 'Governança Regional Soberana', educatech: true, legacy: false },
+  { feature: 'PII-Zero — Privacidade por Design', educatech: true, legacy: false },
+  { feature: 'Auditoria Imutável SHA256', educatech: true, legacy: false },
+  { feature: 'Deploy em Infraestrutura Nacional', educatech: true, legacy: 'parcial' },
+  { feature: 'Anonimização de Dados em Massa', educatech: true, legacy: false },
 ]
 
 const FAQ = [
   {
-    q: 'O que é o Certus Engine?',
-    a: 'O Certus Engine v2.1.1 é um Motor de Governança e Execução institucional. Ele não é apenas um chat, mas uma camada de infraestrutura soberana que garante que IAs executem tarefas complexas com precisão matemática, custo controlado e segurança PII-Zero.',
+    q: 'O que é a Educatech AI Soberana?',
+    a: 'É uma infraestrutura digital de missão crítica projetada especificamente para a América Latina. Focamos em prover soberania de dados, identidade digital segura (ZK-ID) e processos democráticos auditáveis (Civitas) para governos e instituições corporativas.',
   },
   {
-    q: 'O que é a Regra de Ouro v2.1.1?',
-    a: 'É o nosso padrão de fábrica: toda sessão inicia obrigatoriamente com o Qwen 3.5 via OpenRouter. Isso garante que tanto governos quanto desenvolvedores tenham um "Comandante de Campo" de elite desde o primeiro comando, eliminando inconsistências técnicas.',
+    q: 'Por que focar na América Latina?',
+    a: 'A região enfrenta desafios únicos de soberania de dados e transparência. A Educatech AI foi construída para atender essas demandas regionalizadas com conformidade absoluta e deploy em redes nacionais.',
   },
   {
-    q: 'Como funciona a Resiliência "Nunca Cego"?',
-    a: 'O Certus monitora as APIs de IA em tempo real. Se houver falha ou lentidão, o sistema ativa automaticamente nossas "Sentinelas" (CPFs de backup). Você nunca fica no escuro; a continuidade da sua operação é garantida por redundância inteligente.',
+    q: 'O que é o ZK-ID?',
+    a: 'O Zero-Knowledge ID é o nosso pilar de identidade. Ele permite que cidadãos comprovem atributos (idade, nacionalidade, cargo) sem revelar seus dados sensíveis, utilizando provas criptográficas de conhecimento zero.',
   },
   {
-    q: 'Eu posso trocar a LLM principal por outra de minha escolha?',
-    a: 'Sim. A Autonomia Soberana é um direito do Mestre Humano. Você pode redefinir o comandante para qualquer modelo (GPT-4, Claude, Llama). O Certus apenas fornecerá o Advisory de segurança para manter o OpenRouter como sentinela redundante.',
+    q: 'Como funciona a auditoria do Civitas?',
+    a: 'Cada voto ou resposta é registrado com um hash imutável SHA256 e encadeado cronologicamente. Isso permite que qualquer auditor externo verifique a integridade do processo sem violar o anonimato do participante.',
   },
   {
-    q: 'O Certus Engine protege dados sensíveis?',
-    a: 'Sim, através do protocolo PII-Zero. Mascaramos chaves de API, senhas e dados pessoais antes de qualquer envio para nuvens externas. É a escolha definitiva para setores governamentais e empresariais que exigem sigilo absoluto.',
-  },
-  {
-    q: 'Ele serve para desenvolvedores iniciantes ou apenas especialistas?',
-    a: 'Para ambos. Desenvolvedores iniciantes ganham uma camada que impede erros sintáticos e alucinações. Especialistas ganham uma ferramenta de orquestração de frota e controle financeiro (Circuit Breaker) para projetos de milhares de linhas.',
-  },
-  {
-    q: 'Como o Certus ajuda instituições e governos?',
-    a: 'Através da Auditabilidade Imutável e Soberania Técnica. Cada ação gera um log auditável com hash SHA256. Além disso, o deploy pode ser feito On-Premise (Local), garantindo que nenhum dado saia da rede institucional.',
-  },
-  {
-    q: 'Como começar a utilizar?',
-    a: 'Acesse o portal de Acesso Institucional e inicie seu Onboarding. O Certus v2.1.1 é injetado diretamente em seu ecossistema, funcionando como um auditor e orquestrador em tempo real.',
-  },
-  {
-    q: 'O Certus funciona direto no VS Code ou Cursor?',
-    a: 'Sim. O Certus pode ser injetado como uma camada de governança em IDEs, transformando sugestões automáticas em códigos precisos e controlados. Até o momento, possuímos uma conexão perfeita com o aparato Antigravity.',
+    q: 'A infraestrutura pode ser implantada localmente?',
+    a: 'Sim. A Educatech AI suporta deploy On-Premise (Local), garantindo que dados institucionais sensíveis nunca deixem a infraestrutura nacional ou corporativa.',
   },
 ]
 
@@ -173,65 +155,65 @@ function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
 export default function HomePage() {
   return (
     <>
-      {/* ═══ HERO — A DOR ═══════════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-60" />
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-violet-600/10 rounded-full blur-[80px] pointer-events-none" />
+      {/* Ultra Glass Background System */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="aurora" />
+        <div className="grid-bg opacity-40 h-full w-full" />
+      </div>
 
+      {/* ═══ HERO — A DOR ═══════════════════════════════════════════════════ */}
+      <section className="relative min-h-[90vh] flex items-center pt-32 pb-16 overflow-hidden">
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none" />
+        
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 w-full">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.1] tracking-tight mb-6">
-              Infraestrutura Institucional <span className="gradient-text">Soberana LATAM</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-8">
+              Infraestrutura Digital <br />
+              <span className="shimmer-text">Soberana LATAM</span>
             </h1>
             
-            <h2 className="text-2xl sm:text-3xl font-bold text-indigo-400 mb-8">
-              Certus Engine v2.1.1 — Sovereign Master Edition
+            <h2 className="text-2xl sm:text-3xl font-bold text-emerald-400 mb-10 tracking-tight">
+              Educatech AI — Regional Master Edition
             </h2>
 
-            <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-2xl">
-              Sua IA alucina em projetos grandes, quebra o orçamento ou entrega códigos que não funcionam? 
-              <br className="mb-4 block" />
-              O <strong className="text-white">Certus Engine</strong> é o cérebro que organiza a sua IA, garantindo que ela execute tarefas com precisão matemática, sem alucinações e com custo controlado.
+            <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-2xl font-medium">
+              A fundação técnica para a autonomia digital da América Latina. 
+              Implementamos redes de identidade, governança e transparência regional inabalável.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-5 mb-10">
               <Link
                 href="/acesso-institucional"
                 id="hero-cta-institutional"
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold text-lg shadow-2xl hover:shadow-indigo-500/30 transition-all duration-200 text-center animate-pulse-glow"
+                className="px-10 py-5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-xl shadow-2xl hover:shadow-emerald-500/40 transition-all duration-300 text-center animate-pulse-glow"
               >
-                Acesso Institucional →
-              </Link>
-              <Link
-                href="/documentacao"
-                id="hero-cta-docs"
-                className="px-8 py-4 rounded-xl glass border border-slate-700 hover:border-indigo-500/50 text-slate-300 hover:text-white font-semibold text-lg transition-all duration-200 text-center"
-              >
-                Agendar Demo Enterprise
+                Solicitar Acesso à Infraestrutura →
               </Link>
             </div>
 
             <p className="text-xs text-slate-600">
-              ✓ Governança de Missão Crítica &nbsp; ✓ Deploy On-Premise &nbsp; ✓ PII-Zero Compliant
+              ✓ Soberania de Dados Nacional &nbsp; ✓ Deploy On-Premise &nbsp; ✓ PII-Zero Compliant
             </p>
           </div>
 
           {/* Floating proof card */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden xl:block w-96 animate-float">
-            <div className="glass-bright rounded-2xl p-6 shadow-2xl glow-indigo">
-              <div className="text-indigo-400 font-bold mb-4">Métricas de Governança</div>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2 text-sm text-slate-300">
-                  <span className="text-emerald-500">✓</span> Resiliência "Nunca Cego" v2.1.1
+            <div className="ultra-glass rounded-3xl p-8 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.6)] border border-emerald-500/20">
+              <div className="text-emerald-400 font-black tracking-widest text-xs uppercase mb-6">Security Pulse</div>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3 text-sm text-slate-200 font-medium">
+                  <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_#10b981]" />
+                  Resiliência Soberana Ativa
                 </li>
-                <li className="flex items-center gap-2 text-sm text-slate-300">
-                  <span className="text-emerald-500">✓</span> Comandante Qwen 3.5 Alpha
+                <li className="flex items-center gap-3 text-sm text-slate-200 font-medium">
+                  <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_#10b981]" />
+                  Node Consolidated: SSoT
                 </li>
-                <li className="flex items-center gap-2 text-sm text-slate-300">
-                  <span className="text-emerald-500">✓</span> Autonomia Soberana de Troca
+                <li className="flex items-center gap-3 text-sm text-slate-200 font-medium">
+                  <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_#10b981]" />
+                  PII-Zero Hardened Core
                 </li>
               </ul>
             </div>
@@ -259,15 +241,15 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
           <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
             <div>
-              <p className="text-xs font-bold text-emerald-400 uppercase tracking-[0.4em] mb-3 animate-pulse">● Live Infrastructure Status</p>
-              <h2 className="text-4xl font-black text-white tracking-tight">Painel de <span className="text-emerald-400">Resiliência Soberana</span></h2>
+              <p className="text-xs font-bold text-emerald-400 uppercase tracking-[0.4em] mb-3 animate-pulse">● LATAM Regional Monitoring</p>
+              <h2 className="text-4xl font-black text-white tracking-tight">Status da <span className="text-emerald-400">Infraestrutura Soberana</span></h2>
             </div>
             <div className="flex items-center gap-3 bg-slate-900/50 border border-slate-800 px-6 py-3 rounded-2xl">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
               </span>
-              <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">Protocolo "Nunca Cego" Ativo</span>
+              <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">Protocolo de Soberania Ativo</span>
             </div>
           </div>
 
@@ -278,36 +260,36 @@ export default function HomePage() {
               { label: 'Consenso Tribunal', value: 'Síncrono', sub: '5/5 CPUs Active', color: 'indigo' },
               { label: 'Escudo PII-Zero', value: '100% Inabalável', sub: 'Zero Data Leaks', color: 'violet' },
             ].map((stat) => (
-              <div key={stat.label} className="glass-bright rounded-2xl p-6 border border-slate-800 hover:border-emerald-500/20 transition-all duration-500 group relative">
-                <div className="absolute top-0 right-0 p-3 opacity-20">
-                   <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <div key={stat.label} className="ultra-glass rounded-3xl p-8 border border-emerald-500/10 hover:border-emerald-500/30 transition-all duration-500 group relative">
+                <div className="absolute top-0 right-0 p-4 opacity-40">
+                   <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse glow-neon" />
                 </div>
                 <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">{stat.label}</p>
                 <p className={`text-2xl font-black text-white group-hover:text-emerald-400 transition-colors`}>{stat.value}</p>
                 <p className="text-[9px] font-mono text-slate-600 mt-2 uppercase">{stat.sub}</p>
                 
-                <div className="mt-4 h-1 w-full bg-slate-800 rounded-full overflow-hidden">
-                  <div className="h-full bg-emerald-500 animate-shimmer-progress" style={{ width: '85%' }} />
+                <div className="mt-5 h-1 w-full bg-slate-900 rounded-full overflow-hidden">
+                   <div className="h-full bg-emerald-500/50 animate-shimmer" style={{ width: '85%' }} />
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 glass flex flex-wrap items-center justify-between p-6 rounded-3xl border border-indigo-500/10 gap-6">
+          <div className="mt-12 glass flex flex-wrap items-center justify-between p-6 rounded-3xl border border-emerald-500/10 gap-6">
             <div className="flex items-center gap-6">
-              <div className="w-12 h-12 rounded-full bg-indigo-500/10 flex items-center justify-center border border-indigo-500/20">
-                 <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                 <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <div>
-                <p className="text-sm font-bold text-white mb-1 tracking-tight">Dossiê Técnico Institucional v2.1.1</p>
-                <p className="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Multilingual Edition (PT/ES/EN) • Restricted Access</p>
+                <p className="text-sm font-bold text-white mb-1 tracking-tight">Plano de Infraestrutura Regional v2.2.0</p>
+                <p className="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Multilingual Edition (PT/ES/EN) • Latin America Treaty</p>
               </div>
             </div>
             <Link 
               href="/whitepaper"
-              className="px-6 py-3 bg-white/5 hover:bg-indigo-500 hover:text-white rounded-xl text-indigo-400 text-[10px] font-bold uppercase tracking-widest border border-indigo-500/20 transition-all"
+              className="px-6 py-3 bg-white/5 hover:bg-emerald-500 hover:text-white rounded-xl text-emerald-400 text-[10px] font-bold uppercase tracking-widest border border-emerald-500/20 transition-all"
             >
-              Acessar Whitepaper Técnico →
+              Acessar Plano de Infraestrutura →
             </Link>
           </div>
         </div>
@@ -421,38 +403,26 @@ export default function HomePage() {
       {/* ═══ A PROVA — centenas de horas SEM FALHAS ════════════════════════════════ */}
       <section className="py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="glass-bright rounded-3xl p-10 md:p-16 relative overflow-hidden border border-indigo-500/20 glow-indigo">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-500" />
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-indigo-600/5 rounded-full blur-[80px]" />
+          <div className="ultra-glass rounded-3xl p-10 md:p-16 relative overflow-hidden border border-emerald-500/20 glow-emerald">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500" />
+            <div className="absolute bottom-0 right-0 w-64 h-64 bg-emerald-600/5 rounded-full blur-[80px]" />
 
             <div className="relative">
-              <p className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-4">A Prova Real</p>
+              <p className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-4">Integridade Crítica</p>
               <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-                Mais de{' '}
-                <span className="gradient-text">centenas de horas</span>{' '}
-                trabalhadas sem uma única falha.
+                Infraestrutura Distribuída <br />
+                <span className="shimmer-text">Garante Soberania Real</span>
               </h2>
               <p className="text-xl text-slate-300 mb-6 max-w-3xl leading-relaxed">
-                Em uma codebase de <strong className="text-white">milhares de linhas de código</strong>, distribuída em <strong className="text-white">5 grandes projetos simultâneos</strong>, o Certus Engine manteve o Antigravity focado, preciso e incansável — eliminando delírios, confusão de contexto e gasto de tokens desperdiçados.
+                Nossos sistemas de identidade (ZK-ID) e governança (Civitas) já foram testados em cenários de alta complexidade, provando que a América Latina pode e deve ter sua própria base técnica independente.
               </p>
-              <blockquote className="border-l-4 border-indigo-500 pl-6 text-slate-400 italic text-lg mb-8">
-                "Antes do Certus, eu enfrentava desafios constantes. A IA misturava páginas e acessava pastas erradas. Após a implementação do Certus Engine, foram centenas de horas trabalhadas sem uma única falha. Estou realmente impressionado."
-              </blockquote>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/acesso-institucional"
                   id="proof-cta-institutional"
-                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold shadow-2xl hover:shadow-indigo-500/30 transition-all text-center"
+                  className="px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold shadow-2xl hover:shadow-emerald-500/30 transition-all text-center"
                 >
                   Inicie o Protocolo de Acesso →
-                </Link>
-
-                <Link
-                  href="/vantagens"
-                  id="proof-cta-learn"
-                  className="px-8 py-4 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold transition-all text-center"
-                >
-                  Ver Todas as Vantagens
                 </Link>
               </div>
             </div>
@@ -464,31 +434,31 @@ export default function HomePage() {
       <section className="py-24 bg-gradient-to-b from-transparent to-slate-900/30">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <p className="text-xs font-semibold text-indigo-400 uppercase tracking-widest mb-3">Comparativo</p>
+            <p className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-3">Comparativo</p>
             <h2 className="text-4xl font-black text-white mb-4">
-              Certus vs.{' '}
-              <span className="text-slate-500">Wrappers Genéricos</span>
+              Educatech vs.{' '}
+              <span className="text-slate-500">Sistemas Legados</span>
             </h2>
             <p className="text-slate-400">
-              A diferença entre uma ferramenta que "parece funcionar" e uma que <strong className="text-white">garante</strong> que funciona.
+              A diferença entre infraestrutura estrangeira e <strong className="text-white">soberania regional real</strong>.
             </p>
           </div>
-          <div className="glass rounded-2xl overflow-hidden">
+          <div className="ultra-glass rounded-2xl overflow-hidden border border-emerald-500/10">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-slate-700/50">
+                <tr className="border-b border-white/5">
                   <th className="text-left py-4 px-6 text-sm font-semibold text-slate-400">Capacidade</th>
-                  <th className="py-4 px-6 text-sm font-bold text-indigo-300">Certus Engine</th>
-                  <th className="py-4 px-6 text-sm font-medium text-slate-500">Concorrentes Genéricos</th>
+                  <th className="py-4 px-6 text-sm font-bold text-emerald-400">Educatech AI</th>
+                  <th className="py-4 px-6 text-sm font-medium text-slate-500">Sistemas Externos</th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON.map((row, i) => (
-                  <tr key={row.feature} className={`border-b border-slate-700/30 ${i % 2 === 0 ? 'bg-slate-800/10' : ''}`}>
+                  <tr key={row.feature} className={`border-b border-white/5 ${i % 2 === 0 ? 'bg-white/5' : ''}`}>
                     <td className="py-3.5 px-6 text-sm text-slate-300">{row.feature}</td>
                     <td className="py-3.5 px-6 text-center text-lg">✅</td>
                     <td className="py-3.5 px-6 text-center text-sm">
-                      {row.generic === true ? '✅' : row.generic === 'parcial' ? (
+                      {row.legacy === true ? '✅' : row.legacy === 'parcial' ? (
                         <span className="text-yellow-500 text-xs">Parcial</span>
                       ) : '❌'}
                     </td>
@@ -504,36 +474,36 @@ export default function HomePage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <p className="text-xs font-semibold text-indigo-400 uppercase tracking-widest mb-3">Ecossistema</p>
+            <p className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-3">Ecossistema Regional</p>
             <h2 className="text-4xl font-black text-white mb-4">
-              O Certus se integra ao que você{' '}
-              <span className="gradient-text">já usa.</span>
+              Integração Institucional <br />
+              <span className="shimmer-text">Sem Exposição de Dados</span>
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Não substitua suas ferramentas. Governe-as. O Certus é injetável em qualquer ecossistema.
+              Nossa infraestrutura se integra aos sistemas governamentais existentes, provendo uma camada de soberania técnica imediata.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: '💻',
-                label: 'IDEs (VS Code / Copilot / Cursor)',
-                desc: 'Custo previsível por desenvolvedor. Sugestões de código validadas sintaticamente na borda. Fim do "Tab" que quebra o build.',
+                icon: '🌍',
+                label: 'Redes Governamentais',
+                desc: 'Deploy em datacenters nacionais ou soberanos. Controle total sobre a trilha de auditoria e logs de processamento.',
               },
               {
-                icon: '🐳',
-                label: 'DevOps (Docker / CI/CD)',
-                desc: 'Automação baseada em telemetria real. Dockerfiles que se auto-corrigem. PII-Zero impede segredos no docker-compose.yaml.',
+                icon: '🏛️',
+                label: 'Conselhos e Universidades',
+                desc: 'Inteligência social e consultas de larga escala com garantia de anonimato ZK-ID e integridade técnica.',
               },
               {
-                icon: '🛡️',
-                label: 'APIs (OpenAI / Gemini / Anthropic)',
-                desc: 'Transforma modelos probabilísticos em microserviços determinísticos com JSON estruturado, auditável e compliance-ready.',
+                icon: '🛂',
+                label: 'Sistemas de Identidade',
+                desc: 'Provedor de ID Digital Soberano. Autenticação criptográfica sem necessidade de armazenamento centralizado de PII.',
               },
             ].map((item) => (
-              <div key={item.label} className="glass rounded-2xl p-8 hover:border-indigo-500/30 hover:glow-sm transition-all duration-300 group">
+              <div key={item.label} className="ultra-glass rounded-3xl p-8 border border-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300 group">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-bold text-white text-lg mb-3 group-hover:text-indigo-300 transition-colors">{item.label}</h3>
+                <h3 className="font-bold text-white text-lg mb-3 group-hover:text-emerald-300 transition-colors">{item.label}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -551,7 +521,7 @@ export default function HomePage() {
               <span className="gradient-text">Frequentes</span>
             </h2>
             <p className="text-slate-400">
-              Tudo o que você precisa saber antes de transformar a sua IA em um Motor de Execução.
+              Tudo o que você precisa saber para proteger sua operação com a Infraestrutura Soberana.
             </p>
           </div>
           <div className="flex flex-col gap-3">
@@ -565,8 +535,8 @@ export default function HomePage() {
       {/* ═══ PRICING CTA ════════════════════════════════════════════════════ */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <div className="glass-bright rounded-3xl p-10 glow-indigo relative overflow-hidden">
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-500" />
+          <div className="ultra-glass rounded-3xl p-12 glow-emerald relative overflow-hidden">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500" />
             <p className="text-xs font-semibold text-emerald-400 uppercase tracking-widest mb-4">🔒 Acesso Institucional</p>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-2">
               Sob Consulta
@@ -582,7 +552,7 @@ export default function HomePage() {
               <Link
                 href="/acesso-institucional"
                 id="pricing-cta-institutional"
-                className="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold shadow-2xl hover:shadow-indigo-500/30 transition-all"
+                className="px-10 py-5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black shadow-2xl hover:shadow-emerald-500/40 transition-all duration-300"
               >
                 Obter Acesso
               </Link>
@@ -590,7 +560,7 @@ export default function HomePage() {
               <Link
                 href="/contato"
                 id="pricing-cta-plans"
-                className="px-8 py-4 rounded-xl border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold transition-all"
+                className="px-10 py-5 rounded-2xl ultra-glass border border-emerald-500/20 hover:border-emerald-500/50 text-slate-200 hover:text-white font-bold transition-all duration-300"
               >
                 Agendar Demonstração →
               </Link>

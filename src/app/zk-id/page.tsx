@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { ShieldAlert, Server, Fingerprint, Lock, Database, Code2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'ZK-ID Sovereign Identity | Certus Engine Technical Admin',
-  description: 'Especificações técnicas da camada fundamental de identidade descentralizada do ecossistema Certus Engine.',
+  title: 'ZK-ID Sovereign Identity | Educatech AI Soberana',
+  description: 'Especificações técnicas da camada fundamental de identidade digital da Infraestrutura Soberana LATAM.',
 }
 
 export default function ZkIdPage() {
@@ -22,18 +22,18 @@ export default function ZkIdPage() {
             <div className="flex items-center gap-3 mb-4">
               <div className="px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
                 <ShieldAlert className="w-3 h-3" />
-                Acesso Restrito: Administrador do Sistema
+                Acesso Restrito: Infraestrutura Soberana
               </div>
               <div className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-[10px] font-bold uppercase tracking-widest leading-none">
-                ZK-Sovereign v2.4.0
+                ZK-LATAM v2.4.0
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-4 italic">
-              ZK-ID: <span className="gradient-text">Identidade Soberana</span>
+              ZK-ID: <span className="gradient-text">Identidade Regional</span>
             </h1>
             <p className="text-slate-400 max-w-2xl leading-relaxed font-medium">
-              Documentação técnica de nível governamental para implementação de identidade digital verificável. 
-              Garantindo conformidade PII-Zero e autonomia total do titular.
+              Documentação técnica para implementação de identidade digital verificável e soberana. 
+              Garantindo conformidade PII-Zero e autonomia total do cidadão latino-americano.
             </p>
           </div>
           <div className="glass-bright p-6 rounded-2xl border border-white/10 shadow-2xl min-w-[280px]">
@@ -63,14 +63,15 @@ export default function ZkIdPage() {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Hardware Binding (L1)</h3>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Ancoragem criptográfica da identidade às assinaturas únicas de hardware (CPU serial, BIOS UUID). Impede a clonagem de credenciais administrativas em estações não autorizadas.
+              Ancoragem criptográfica da identidade às assinaturas únicas de hardware. Impede a clonagem de credenciais administrativas em estações não autorizadas.
             </p>
             <div className="p-4 rounded-xl bg-black/40 font-mono text-[10px] text-emerald-500/70">
-              $ certus-id-bind --force <br />
+              $ sovereign-id-bind --force <br />
               [OK] Hardware signature: 0x8F2...4A <br />
               [OK] Sealed commitment created.
             </div>
           </div>
+
 
           {/* Card 2: ZK-Snarks Core */}
           <div className="glass-bright rounded-[2rem] p-8 border border-white/5 hover:border-indigo-500/30 transition-all duration-500 group">

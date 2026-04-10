@@ -128,7 +128,7 @@ export default function CivitasInstPage() {
                    <p className="text-xs text-white font-mono">Real-time Stats Engine</p>
                 </div>
             </div>
-            <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Certus Governance Framework v1.1.0 · Admin-Only Access</p>
+            <p className="text-[10px] text-slate-600 uppercase tracking-widest font-bold">Sovereign Institutional Framework v2.2.0 · LATAM Admin Access</p>
         </div>
       </div>
     </div>

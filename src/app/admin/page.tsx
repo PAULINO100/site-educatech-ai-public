@@ -12,13 +12,13 @@ function Dashboard({ stats, onRefresh }: { stats: any, onRefresh: () => void }) 
         <div>
           <h1 className="text-3xl font-black text-white flex items-center gap-3">
             <ShieldCheck className="text-emerald-400 w-8 h-8" />
-            Certus Administrative <span className="gradient-text">Portal</span>
+            Portal Administrativo <span className="gradient-text">Soberano</span>
           </h1>
-          <p className="text-slate-500 text-sm mt-1">Status de Operação: Soberano v1.6.1</p>
+          <p className="text-slate-500 text-sm mt-1">Status de Operação: Educatech Soberana v2.2.0</p>
         </div>
         <button 
           onClick={onRefresh}
-          className="p-3 rounded-xl glass hover:bg-white/10 transition-all text-indigo-400"
+          className="p-3 rounded-xl glass hover:bg-white/10 transition-all text-emerald-400"
           title="Recarregar Métricas"
         >
           <RefreshCcw className="w-5 h-5 focus:animate-spin" />
@@ -27,48 +27,48 @@ function Dashboard({ stats, onRefresh }: { stats: any, onRefresh: () => void }) 
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <StatsCard 
-          icon={<Key className="text-indigo-400" />} 
+          icon={<Key className="text-emerald-400" />} 
           label="Chaves Geradas" 
           value={stats.count} 
           sub={`Limite: ${stats.limit}`}
-          color="indigo"
+          color="emerald"
         />
         <StatsCard 
-          icon={<Database className="text-violet-400" />} 
-          label="Slots Disponíveis" 
+          icon={<Database className="text-teal-400" />} 
+          label="Sessões Ativas" 
           value={stats.remaining} 
-          sub="Pesquisa de Campo"
-          color="violet"
+          sub="Monitoramento LATAM"
+          color="emerald"
         />
         <StatsCard 
           icon={<Activity className="text-emerald-400" />} 
-          label="Status do Motor" 
+          label="Status da Infra" 
           value="ATIVO" 
-          sub="Tiered Intelligence OK"
+          sub="Regional Nodes OK"
           color="emerald"
         />
       </div>
 
-      <div className="glass-bright rounded-3xl p-8 border border-white/5 glow-indigo">
+      <div className="glass-bright rounded-3xl p-8 border border-white/5 glow-emerald">
         <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-          <Activity className="w-5 h-5 text-indigo-400" />
-          Logs de Atividade Recente
+          <Activity className="w-5 h-5 text-emerald-400" />
+          Logs de Auditoria Síncrona
         </h3>
         <div className="space-y-3">
           <div className="flex items-center justify-between text-xs font-mono py-2 border-b border-white/5">
-            <span className="text-slate-500">SYSTEM_INIT_SUCCESS</span>
-            <span className="text-indigo-400">v1.6.1</span>
-            <span className="text-slate-600">CONNECTED</span>
+            <span className="text-slate-500">SOVEREIGN_INIT_SUCCESS</span>
+            <span className="text-emerald-400">v2.2.0</span>
+            <span className="text-slate-600">ENCRYPTED</span>
           </div>
           <div className="flex items-center justify-between text-xs font-mono py-2 border-b border-white/5">
-            <span className="text-slate-500">PII_ZERO_SHIELD</span>
+            <span className="text-slate-500">ZK_IDENTITY_SHIELD</span>
             <span className="text-emerald-400">ENABLED</span>
             <span className="text-slate-600">ACTIVE</span>
           </div>
           <div className="flex items-center justify-between text-xs font-mono py-2">
-            <span className="text-slate-500">API_GATEWAY_STATS</span>
-            <span className="text-amber-400">POLLING</span>
-            <span className="text-slate-600">READY</span>
+            <span className="text-slate-500">AUDIT_LOG_STREAM</span>
+            <span className="text-emerald-400">POLLING</span>
+            <span className="text-slate-600">SECURE</span>
           </div>
         </div>
       </div>
@@ -141,12 +141,12 @@ export default function AdminPage() {
       <div className="absolute inset-0 grid-bg opacity-30 fixed pointer-events-none" />
       
       {!authorized ? (
-        <div className="w-full max-w-md glass-bright rounded-[2.5rem] p-10 border border-indigo-500/20 shadow-2xl glow-indigo z-10 animate-in fade-in zoom-in duration-500">
+        <div className="w-full max-w-md glass-bright rounded-[2.5rem] p-10 border border-emerald-500/20 shadow-2xl glow-emerald z-10 animate-in fade-in zoom-in duration-500">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center mx-auto mb-4 border border-indigo-500/20">
-              <Lock className="text-indigo-400 w-8 h-8" />
+            <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center mx-auto mb-4 border border-emerald-500/20">
+              <Lock className="text-emerald-400 w-8 h-8" />
             </div>
-            <h2 className="text-2xl font-black text-white mb-2 underline decoration-indigo-500/50 decoration-4">Cofre Administrativo</h2>
+            <h2 className="text-2xl font-black text-white mb-2 underline decoration-emerald-500/50 decoration-4 italic">Cofre Administrativo</h2>
             <p className="text-slate-500 text-sm">Insira o PIN de 4 dígitos para liberação soberana.</p>
           </div>
 
@@ -159,21 +159,21 @@ export default function AdminPage() {
               autoComplete="off"
               onChange={(e) => setPin(e.target.value.replace(/\D/g, ''))}
               placeholder="••••"
-              className="w-full text-center text-4xl tracking-[1rem] py-4 bg-slate-950/50 border border-slate-800 rounded-2xl text-indigo-400 font-mono focus:border-indigo-500 focus:outline-none transition-all placeholder:text-slate-800"
+              className="w-full text-center text-4xl tracking-[1rem] py-4 bg-slate-950/50 border border-slate-800 rounded-2xl text-emerald-400 font-mono focus:border-emerald-500 focus:outline-none transition-all placeholder:text-slate-800"
             />
             {error && <p className="text-red-400 text-xs text-center font-bold animate-shake">{error}</p>}
             
             <button
               type="submit"
               disabled={loading || pin.length < 4}
-              className="w-full py-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-black hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:grayscale"
+              className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-black hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:grayscale shadow-lg shadow-emerald-500/20"
             >
               {loading ? 'Validando...' : 'Desbloquear Portal'}
             </button>
           </form>
 
           <p className="mt-8 text-[10px] text-slate-700 font-mono uppercase text-center tracking-widest">
-            Protocolo Certus v1.6.1 · SHA256 Encryption
+            Protocolo de Soberania v2.2.0 · SHA256 Encryption
           </p>
         </div>
       ) : (

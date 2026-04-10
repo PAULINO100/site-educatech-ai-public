@@ -133,7 +133,7 @@ export default function CivitasGovPage() {
 
         {/* Footer Technical Note */}
         <div className="text-center font-mono text-[10px] text-slate-600 uppercase tracking-[0.3em]">
-           Proteção Contra Ataques Quânticos · Cripto-Soberania · Certus Engine Protected
+           Proteção Contra Ataques Quânticos · Cripto-Soberania · Infraestrutura Soberana LATAM
         </div>
 
       </div>

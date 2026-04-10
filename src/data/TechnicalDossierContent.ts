@@ -1,24 +1,23 @@
 export const WHITE_PAPER_CONTENT: any = {
   pt: {
-    title: "Dossiê Técnico: Infraestrutura Soberana LATAM v2.1.1",
+    title: "Dossiê Técnico: Infraestrutura Soberana LATAM v2.2.0",
     sections: [
       {
         id: "intro",
         title: "1. Visão Geral da Infraestrutura Soberana",
-        content: `O Certus Engine v2.1.1 representa a vanguarda da governança técnica descentralizada. Esta infraestrutura foi projetada para garantir que sistemas de Inteligência Artificial e Governança Digital operem sob o protocolo Tier A+, focado em determinismo, resiliência e soberania de dados. 
+        content: `A Educatech AI Soberana v2.2.0 representa a vanguarda da governança técnica descentralizada para a América Latina. Esta infraestrutura foi projetada para garantir que sistemas de Gestão Pública e Governança Digital operem sob o protocolo de Soberania Total, focado em determinismo, resiliência e controle regional de dados. 
         
-        A arquitetura é composta por quatro pilares fundamentais:
-        1. Certus Engine (Orquestrador Mestre)
-        2. ZK-ID (Identidade Soberana Digital)
-        3. Civitas Institucional (Painel de Transparência)
-        4. Civitas Governamental (Motor de Auditoria e Decisão)
+        A arquitetura é composta por três pilares fundamentais:
+        1. ZK-ID (Identidade Soberana Digital)
+        2. Civitas Institucional (Inteligência Social)
+        3. Civitas Governamental (Infraestrutura de Transparência)
         
-        O objetivo central é a eliminação do "Risco de Dependência" (Vendor Lock-in) através do protocolo de Autonomia Soberana, permitindo que instituições governamentais gerenciem sua própria inteligência sem exposição de metadados sensíveis.`
+        O objetivo central é a eliminação do "Risco de Dependência" (Vendor Lock-in) através do protocolo de Autonomia Soberana, permitindo que nações e instituições gerenciem sua própria base técnica sem exposição de metadados sensíveis.`
       },
       {
         id: "zkid",
         title: "2. ZK-ID: Identidade PII-Zero",
-        content: `O sistema ZK-ID utiliza Provas de Conhecimento Zero (Zero-Knowledge Proofs) baseadas em Snarks Groth16. Diferente de sistemas de identidade tradicionais, o ZK-ID valida a legitimidade de um cidadão ou agente sem nunca ler, armazenar ou transmitir dados pessoais identificáveis (PII).
+        content: `O sistema ZK-ID utiliza Provas de Conhecimento Zero (Zero-Knowledge Proofs). Diferente de sistemas de identidade tradicionais, o ZK-ID valida a legitimidade de um cidadão ou agente sem nunca ler, armazenar ou transmitir dados pessoais identificáveis (PII).
         
         Especificações Técnicas:
         - Algoritmo de Criptografia: Poseidon Hash
@@ -28,7 +27,7 @@ export const WHITE_PAPER_CONTENT: any = {
       {
         id: "civitas",
         title: "3. Civitas e a Transparência Radical",
-        content: `A plataforma Civitas (Institucional e Governamental) implementa a "Auditoria ao Vivo" via Mirror Stream. Cada decisão governamental ou voto em pesquisa institucional é registrado em uma árvore de Merkle imutável. 
+        content: `A plataforma Civitas (Institucional e Governamental) implementa a "Auditoria ao Vivo" via Mirror Stream. Cada decisão institucional ou voto em pesquisa é registrado em uma árvore de Merkle imutável. 
         
         Destaques da Arquitetura:
         - Sincronização em Tempo Real (WebSockets)
@@ -37,48 +36,43 @@ export const WHITE_PAPER_CONTENT: any = {
       },
       {
         id: "resilience",
-        title: "4. Protocolo 'Nunca Cego' e Resiliência Ativa",
-        content: `A resiliência é garantida pelo monitoramento ativo em 12 nodos distribuídos (LATAM Nodes). Caso um provedor central de IA falhe, o Certus Engine redireciona automaticamente o fluxo de trabalho para as "Sentinelas" redundantes em milissegundos.
+        title: "4. Protocolo de Resiliência Soberana",
+        content: `A resiliência é garantida pelo monitoramento ativo em 12 nodos distribuídos (LATAM Nodes). Caso um ponto da infraestrutura falhe, a Educatech AI redireciona automaticamente o fluxo de trabalho para pontos redundantes em milissegundos.
         
         Camadas de Resiliência:
-        - Camada 1: Sentinelas Locais (Edge Computing)
-        - Camada 2: Tribunal de CPUs (Híbrido)
+        - Camada 1: Nodos Locais (Edge Computing)
+        - Camada 2: Consenso Técnico Regional
         - Camada 3: Backups Soberanos (Offline Recovery)`
       },
       {
         id: "compliance",
-        title: "5. Compliance Tier A+ e Governança Imutável",
-        content: `O Certus Engine v2.1.1 impõe uma trilha de auditoria criptográfica baseada em SHA-256 para cada interação. Isso garante que instituições governamentais possam provar a integridade de cada decisão automatizada perante órgãos reguladores.
+        title: "5. Compliance e Governança Imutável",
+        content: `A Educatech AI Soberana v2.2.0 impõe uma trilha de auditoria criptográfica baseada em SHA-256 para cada interação. Isso garante que instituições possam provar a integridade de cada processo perante órgãos reguladores.
         
         Protocolos de Segurança:
         - SHA-256 Interativo (Assinatura de Logs)
-        - Circuit Breaker Financeiro (Proteção de Erário)
+        - Circuit Breaker de Integridade
         - Hardware Binding (Segurança de Ponto Final)`
       },
       {
-        id: "interop",
-        title: "6. Interoperabilidade Civil e Governamental",
-        content: `A integração entre o portal Institucional e o motor Governamental ocorre via "Audit-Bridge", uma camada de comunicação criptografada que permite a exportação de dados auditáveis em tempo real para o portal de transparência municipal ou nacional.`
-      },
-      {
         id: "future",
-        title: "7. Roadmap de Soberania 2026",
-        content: `O futuro da infraestrutura LATAM prevê a total descentralização dos nodos de inferência, permitindo o processamento de IA em infraestruturas locais de baixa energia (Sovereign Low-Power Computing).`
+        title: "6. Roadmap de Soberania 2026",
+        content: `O futuro da infraestrutura LATAM prevê a total descentralização dos nodos de inferência, permitindo o processamento em infraestruturas locais de baixo consumo energético e alta soberania técnica.`
       }
     ]
   },
   es: {
-    title: "Dossier Técnico: Infraestructura Soberana LATAM v2.1.1",
+    title: "Dossier Técnico: Infraestructura Soberana LATAM v2.2.0",
     sections: [
       {
         id: "intro",
         title: "1. Visión General de la Infraestructura Soberana",
-        content: `Certus Engine v2.1.1 representa la vanguardia de la gobernanza técnica descentralizada. Esta infraestructura fue diseñada para garantizar que los sistemas de Inteligencia Artificial y Gobernanza Digital operen bajo el protocolo Tier A+, enfocado en el determinismo, la resiliencia y la soberanía de los datos.`
+        content: `Educatech AI Soberana v2.2.0 representa la vanguardia de la gobernanza técnica descentralizada para América Latina. Esta infraestructura fue diseñada para garantizar que los sistemas de Gestión Pública y Gobernanza Digital operen bajo el protocolo de Soberanía Total, enfocado en el determinismo, la resiliencia y el control regional de los datos.`
       },
       {
         id: "zkid",
         title: "2. ZK-ID: Identidad PII-Zero",
-        content: `El sistema ZK-ID utiliza Pruebas de Conocimiento Cero (Zero-Knowledge Proofs) basadas en Snarks Groth16. Permite validar la legitimidad sin exponer datos personales.`
+        content: `El sistema ZK-ID utiliza Pruebas de Conocimiento Cero (Zero-Knowledge Proofs). Permite validar la legitimidad sin exponer datos personales.`
       },
       {
         id: "civitas",
@@ -87,23 +81,23 @@ export const WHITE_PAPER_CONTENT: any = {
       },
       {
         id: "resilience",
-        title: "4. Protocolo 'Nunca Ciego'",
-        content: `La resiliencia está garantizada por el monitoreo activo de 12 nodos distribuidos. La falla de un proveedor central activa instantáneamente las copias de seguridad de "Sentinel".`
+        title: "4. Protocolo de Resiliencia Soberana",
+        content: `La resiliencia está garantizada por el monitoreo activo de 12 nodos distribuidos en LATAM. La arquitectura asegura la continuidad de la operación institucional.`
       }
     ]
   },
   en: {
-    title: "Technical Dossier: Sovereign Infrastructure LATAM v2.1.1",
+    title: "Technical Dossier: Sovereign Infrastructure LATAM v2.2.0",
     sections: [
       {
         id: "intro",
         title: "1. Sovereign Infrastructure Overview",
-        content: `Certus Engine v2.1.1 represents the vanguard of decentralized technical governance. This infrastructure is designed to ensure that AI and Digital Governance systems operate under the Tier A+ protocol, focused on determinism, resilience, and data sovereignty.`
+        content: `Educatech AI Soberana v2.2.0 represents the vanguard of decentralized technical governance for Latin America. This infrastructure is designed to ensure that Public Management and Digital Governance systems operate under the Total Sovereignty protocol, focused on determinism, resilience, and regional data control.`
       },
       {
         id: "zkid",
         title: "2. ZK-ID: PII-Zero Identity",
-        content: `The ZK-ID system uses Zero-Knowledge Proofs (Groth16 Snarks) to validate legitimacy without ever exposing personally identifiable information (PII).`
+        content: `The ZK-ID system uses Zero-Knowledge Proofs to validate legitimacy without ever exposing personally identifiable information (PII).`
       },
       {
         id: "civitas",
@@ -112,8 +106,8 @@ export const WHITE_PAPER_CONTENT: any = {
       },
       {
         id: "resilience",
-        title: "4. 'Never Blind' Protocol",
-        content: `Resilience is guaranteed through active monitoring of 12 distributed nodes. Real-time switching ensures zero downtime for institutional operations.`
+        title: "4. Sovereign Resilience Protocol",
+        content: `Resilience is guaranteed through active monitoring of 12 distributed LATAM nodes. Real-time switching ensures zero downtime for institutional operations.`
       }
     ]
   }

@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Educatech AI — Infraestrutura Digital Soberana LATAM
 
-## Getting Started
+[![Status: Sovereign](https://img.shields.io/badge/Status-Sovereign_v2.2.0-emerald?style=for-the-badge)](https://educatech-ai.vercel.app)
+[![Region: LATAM](https://img.shields.io/badge/Region-Latin_America-blue?style=for-the-badge)](https://educatech-ai.vercel.app)
 
-First, run the development server:
+Esta plataforma representa a vanguarda da governança técnica descentralizada para a região Latino-Americana. O Educatech AI opera como o orquestrador de uma infraestrutura digital resiliente, inquebrável e **PII-Zero**.
+
+## 🛡️ Pilares Estratégicos
+
+1. **[ZK-ID](https://educatech-ai.vercel.app/zk-id)**: Identidade Soberana Digital baseada em Provas de Conhecimento Zero. Garantia de legitimidade sem exposição de dados pessoais.
+2. **[Civitas Institucional](https://educatech-ai.vercel.app/civitas-inst)**: Inteligência social e governança imutável para instituições, universidades e o setor privado.
+3. **[Civitas Governamental](https://educatech-ai.vercel.app/civitas-gov)**: Motor de auditoria e votação digital auditável para alta administração e missões críticas de estado.
+
+## 🛠️ Stack Tecnológica
+
+- **Framework**: Next.js 14 (App Router)
+- **Design System**: Sovereign Ultra-Glass v2.2.0 (40px blur, Emerald Neon)
+- **Criptografia**: SHA-256 Hash Chaining & ZK-Snarks (Circom)
+- **Deployment**: Infraestrutura Multi-Node distribuída na América Latina.
+
+## 🚀 Início Rápido (Desenvolvimento)
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Conformidade e Auditoria
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O Educatech AI impõe uma trilha de auditoria criptográfica baseada em **SHA-256** para cada interação institucional. Para auditorias regulatórias (LGPD) ou implantação **On-Premise**, entre em contato com nossa equipe técnica.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Este repositório é parte da infraestrutura soberana regional. Conteúdo restrito e protegido.*

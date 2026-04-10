@@ -4,30 +4,30 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://certus.engine.ai'),
+  metadataBase: new URL('https://educatech-ai.vercel.app'),
   title: {
-    default: 'Certus Engine v1.6.0 — Tiered Intelligence & Governança de IA',
-    template: '%s | Certus Engine v1.6.0',
+    default: 'Educatech AI Soberana — Infraestrutura Digital para a América Latina',
+    template: '%s | Educatech AI Soberana',
   },
   description:
-    'Alcance o determinismo absoluto com o Certus Engine v1.6.0 Tiered Intelligence Edition. Governança Tier A+, PII-Zero e orquestração multi-motor para codebases complexas.',
+    'Soberania Digital para Governos e Instituições da América Latina. Implementação de ZK-ID, Civitas Institucional e Governamental com conformidade PII-Zero e descentralização.',
   keywords: [
-    'governança de IA', 'controle de tokens', 'IA para empresas', 'PII-Zero', 'eliminar alucinação IA',
-    'AI compliance LGPD', 'inteligência artificial determinística', 'certus engine', 'custo de API IA',
+    'soberania digital', 'infraestrutura LATAM', 'ZK-ID', 'Civitas Institucional', 'votação digital auditável',
+    'IA institucional', 'PII-Zero', 'Educatech AI', 'governo digital',
   ],
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://certus.engine.ai',
-    siteName: 'Certus Engine',
-    title: 'Certus Engine — A Certeza no Meio do Caos da IA',
-    description: 'Mais de centenas de horas de trabalho sem uma única falha em milhares de linhas de código+ linhas de código. O motor de governança que transforma IAs probabilísticas em engenharia determinística.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Certus Engine' }],
+    url: 'https://educatech-ai.vercel.app',
+    siteName: 'Educatech AI Soberana',
+    title: 'Educatech AI — Infraestrutura Digital Soberana para a América Latina',
+    description: 'Liderando a fronteira da soberania digital regional. ZK-ID e Civitas: soluções determinísticas para a governança moderna.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Educatech AI Soberana' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Certus Engine — Pare de Torcer para a sua IA',
-    description: 'Determinismo, PII-Zero e controle de custos. centenas de horas sem falhas em milhares de linhas de código+ linhas. Comece grátis.',
+    title: 'Educatech AI Soberana — Soberania Digital Regional',
+    description: 'ZK-ID, Civitas Institucional e Governamental. A base técnica para a autonomia institucional da América Latina.',
   },
   robots: { index: true, follow: true },
   icons: {

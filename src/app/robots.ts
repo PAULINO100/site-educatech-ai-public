@@ -1,8 +1,6 @@
-import { MetadataRoute } from 'next'
-
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: '*', allow: '/', disallow: ['/api/', '/app/dashboard'] },
-    sitemap: 'https://certus.engine.ai/sitemap.xml',
+    rules: { userAgent: '*', allow: '/', disallow: ['/api/', '/admin/'] },
+    sitemap: 'https://educatech-ai.vercel.app/sitemap.xml',
   }
 }
